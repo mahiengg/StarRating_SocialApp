@@ -7,6 +7,6 @@
 
 
 
-  Functionality
-  Workaround project of Star rating and Social app friend list in Angular . 
+ - Functionality
+    -  Workaround project of Star rating and Social app friend list in Angular . 
   
