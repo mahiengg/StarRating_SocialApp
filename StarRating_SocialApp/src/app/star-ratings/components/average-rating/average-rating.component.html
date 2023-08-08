@@ -1,0 +1,8 @@
+<div class="ratings__average">
+  <ng-container *ngFor="let id of fiveStarRating; index as i">
+    <span *ngIf="i < average; else emptyStar">&#9733;</span>
+    <ng-template #emptyStar>
+      <span>&#9734;</span>
+    </ng-template>
+  </ng-container>
+</div>

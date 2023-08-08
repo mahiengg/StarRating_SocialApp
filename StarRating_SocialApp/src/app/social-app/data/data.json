@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name": "Sophie",
+    "likeCount": 15
+  },
+  {
+    "id": 2,
+    "name": "Mia",
+    "likeCount": 3
+  },
+  {
+    "id": 3,
+    "name": "Elon",
+    "likeCount": 12
+  },
+  {
+    "id": 4,
+    "name": "Mary",
+    "likeCount": 9
+  },
+  {
+    "id": 5,
+    "name": "John",
+    "likeCount": 9
+  }
+]

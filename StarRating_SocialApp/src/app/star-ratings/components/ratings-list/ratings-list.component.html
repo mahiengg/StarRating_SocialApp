@@ -1,0 +1,21 @@
+<div>
+  <div class="ratings">
+    <ng-container *ngFor="let id of fiveStarRating; index as i">
+      <span *ngIf="i < users; else emptyStar">&#9733;</span>
+    </ng-container>
+    <ng-template #emptyStar>
+      <span>&#9734;</span>
+    </ng-template>
+  </div>
+  <div *ngFor="let user of ratings">
+    <ng-container class="ratings" *ngFor="let id of fiveStarRating; index as i">
+      <span *ngIf="i < user.rate; else emptyStar">&#9733;</span>
+    </ng-container>
+
+    <h4>{{ user.name }}</h4>
+    <p>{{ user.content }}</p>
+    <ng-template #emptyStar>
+      <span>&#9734;</span>
+    </ng-template>
+  </div>
+</div>

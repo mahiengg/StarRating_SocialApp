@@ -1,0 +1,17 @@
+<div class="app-wrapper">
+  <h3>My Friends</h3>
+  <div *ngFor="let friend of friends; trackBy: trackByLikeCount">
+    <ul>
+      <li>
+        <span>{{ friend.name }}</span>
+      </li>
+      <button
+        style="margin-left: 5px"
+        (click)="likeFriend(friend)"
+        [disabled]="friend.likeCount > 15"
+      >
+        Like {{ friend.likeCount }}
+      </button>
+    </ul>
+  </div>
+</div>

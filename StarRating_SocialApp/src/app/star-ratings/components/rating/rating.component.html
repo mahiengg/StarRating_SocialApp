@@ -1,0 +1,13 @@
+<div>
+  <h4>{{ name }}</h4>
+  <div class="ratings__item">
+    <div *ngFor="let id of fiveStarRating; index as i">
+      <span *ngIf="i < rate; else emptyStar">&#9733;</span>
+    </div>
+  </div>
+  <p>{{ content }}</p>
+
+  <ng-template #emptyStar>
+    <span>&#9734;</span>
+  </ng-template>
+</div>

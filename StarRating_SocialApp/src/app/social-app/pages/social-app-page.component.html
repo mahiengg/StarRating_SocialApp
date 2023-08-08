@@ -1,0 +1,6 @@
+<div class="error" *ngIf="fetchingData">Fetching friends has failed</div>
+<div class="error" *ngIf="likeError">Liking friend has failed</div>
+<app-friend-list
+  [friends]="friends"
+  (likedId)="addFriendLike($event)"
+></app-friend-list>
